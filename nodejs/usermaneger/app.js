@@ -4,6 +4,7 @@ var app = express();
 app.set("view engine", "ejs");
 //路由設計
 app.get("/", mainctrl.showIndex); 
+app.get("/userlist", mainctrl.showUserlist); 
 app.get("/adduser", mainctrl.addUser);
 //靜態頁面
 app.use(express.static("public"));
